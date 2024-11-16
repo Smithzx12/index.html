@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้า</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+     <style>
+        .header {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            color: #E53935;
+            font-size: 2em;
+            margin: 0;
+        }
+        h4 {
+            color: #E53935;
+            font-size: 1.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .highlight {
+            color: #E53935;
+            font-weight: bold;
+        }
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .features li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .sale-badge {
+            position: absolute;
+            top: 10px;
+            left: -30px;
+            background-color: #E53935;
+            color: #fff;
+            padding: 5px 50px;
+            transform: rotate(-45deg);
+            font-size: 0.9em;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+    </style>
+<body>
+
+    <header style="background-color: white;">
+        <div id="navbar-placeholder"></div>
+    </header>
+
+    <section id="products" class="product-section">
+        <div class="product-grid">
+            <!-- Product items -->
+            <div class="product-item">
+                <a href="page1.html">
+                    <img src="https://img.lazcdn.com/g/p/cd60ac2a71e9d0e96543a1cf272705bd.jpg_720x720q80.jpg" style="height: 280px;" alt="สินค้า 1">
+                </a>
+                <h3>ตุ๊กตาแมวเหมียว ขนาด 40cm.</h3>
+                <p>ตุ๊กตาแมวเหมียวมีขนาด 40 cm. เหมียวตัวใหญ่ กอดได้เต็มที่ อบอุ่นฝันดีทั้งคืน</p>
+                <p>590 บาท</p>
+                <button onclick="addToCart()">สั่งซื้อ</button>
+            </div>
+
+             <div class="product-item">
+                 <a href="page2.html">
+                    <img src="https://www.tukkatalovely.com/assets/image/shop_product/tukkatalovely/O1CN01u9h6Hn1WDNeLYKE90_!!2528122754-0-cib.jpg" style="height: 280px;" alt="สินค้า 1">
+                </a>
+                <h3>ตุ๊กตาลูกแมว ขนฟูน่ารัก</h3>
+                <p>ตุ๊กตาแมว 3 สี ขนาด 50cmตุ๊กตาแมวส้ม ตุ๊กตาแมวเทา ตุ๊กตาแมวขาว</p>
+                <p>750 บาท</p>
+                <button onclick="addToCart()">สั่งซื้อ</button>
+            </div>
+            
+            <div class="product-item position-relative">
+            <span class="sale-badge">ลดราคา</span>
+                 <a href="page3.html">
+                    <img src="https://www.tukkatalovely.com/assets/image/shop_product/tukkatalovely/D2A34B5C-000D-4EAA-BDBD-A6B20FB14E71.jpeg" style="height: 280px;" alt="สินค้า 1">
+                </a>
+                <h3>ตุ๊กตาแมว 3 สี 25cm</h3>
+                <p>ตุ๊กตาลูกแมว ขนฟูน่ารัก ขนาด 25cm มีทั้งหมด 3 สี สีขาวเทาส้ม, แมวส้ม และน้องแมวสีเทา</p>
+                <p>320 บาท</p>
+                <button onclick="addToCart()">สั่งซื้อ</button>
+            </div>
+
+            <div class="product-item position-relative">
+                <span class="sale-badge">ลดราคา</span>
+                <a href="page4.html">
+                    <img src="https://s.alicdn.com/@sc04/kf/Hadcdf2f852f749db88e9effdfa9e7112y.jpg_720x720q50.jpg" style="height: 280px;" alt="สินค้า 1">
+                </a>
+                <h3>ตุ๊กตาการ์ตูนแมว</h3>
+                <p>ผ้าฝ้ายพีพี 31cm-50cm</p>
+                <p>115 บาท</p>
+                <button onclick="addToCart()">สั่งซื้อ</button>
+            </div>
+            
+            <div class="product-item position-relative">
+                <span class="sale-badge">ลดราคา</span>
+                 <a href="page5.html">
+                    <img src="https://s.alicdn.com/@sc04/kf/H70605d2800ef47d7a5833f86686f4dd4e.jpg_720x720q50.jpg" style="height: 280px;" alt="สินค้า 1">
+                </a>
+                <h3>ตุ๊กตาแมวหมอนตุ๊กตาแมวยัดนุ่นนุ่ม</h3>
+                <p>ผ้าฝ้ายพีพี 40ซม.</p>
+                <p>142 บาท</p>
+                <button onclick="addToCart()">สั่งซื้อ</button>
+            </div>
+            
+            <div class="product-item">
+                 <a href="page6.html">
+                    <img src="https://s.alicdn.com/@sc04/kf/Ha38a7b7c09dc4bdb9ef9a92100682949l.jpg_720x720q50.jpg" style="height: 280px;" alt="สินค้า 1">
+                </a>
+                <h3>Retractable Doll</h3>
+                <p>ผ้าฝ้ายพีพี 25-50cm</p>
+                <p>456 บาท</p>
+                <button onclick="addToCart()">สั่งซื้อ</button>
+            </div>
+
+            <div class="product-item">
+                 <a href="page7.html">
+                    <img src="https://s.alicdn.com/@sc04/kf/H7a76c352166740359e12c411736235773.jpg_720x720q50.jpg" style="height: 280px;" alt="สินค้า 1">
+                </a>
+                <h3>Kawaii นกอ่อนตุ๊กตาของเล่นตุ๊กตาสัตว์</h3>
+                <p>ผ้าฝ้ายพีพี 30ซม.</p>
+                <p>960 บาท</p>
+                <button onclick="addToCart()">สั่งซื้อ</button>
+            </div>
+            
+        </div>
+    </section>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="orderToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">การสั่งซื้อ</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body bg-success text-white">
+            สั่งซื้อสำเร็จจ้า!
+        </div>
+    </div>
+</div>
+
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        // Toast Function for Order Confirmation
+        function addToCart() {
+            var toastElement = document.getElementById('orderToast');
+            var toast = new bootstrap.Toast(toastElement);
+            toast.show();
+        }
+    </script>
+
+</body>
+</html>
